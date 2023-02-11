@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
+            $table->integer('priority');
+            $table->string('foto')->nullable();
+            $table->text('body');
+            $table->text('answers');
+            $table->integer('correct');
             $table->timestamps();
         });
     }
