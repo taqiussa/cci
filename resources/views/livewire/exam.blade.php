@@ -57,7 +57,7 @@
                     <x-button wire:click.prevent="prev" secondary label="Sebelumnya"
                         class="{{ $priority > 1 ? 'visible' : 'invisible' }}" />
                     <x-button wire:click="next" secondary label="Selanjutnya"
-                        class="{{ $priority < 20 ? 'visible' : 'invisible' }}" />
+                        class="{{ $priority < 30 ? 'visible' : 'invisible' }}" />
                 </div>
             </div>
             <div class="border-2 border-slate-700 p-3 lg:space-y-2">

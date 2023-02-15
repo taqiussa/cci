@@ -5,9 +5,12 @@ namespace App\Http\Livewire;
 use App\Models\Answer;
 use Livewire\Component;
 use App\Models\Question;
+use WireUi\Traits\Actions;
 
 class Exam extends Component
 {
+    use Actions;
+
     public $status;
     public $priority;
     public $count;
@@ -107,9 +110,23 @@ class Exam extends Component
     {
         $hitung = Answer::whereUserId(auth()->user()->id)
             ->count();
-        auth()->user()->update([
-            'sudah_test'  => 1
-        ]);
+        if ($hitung < 30) {
+
+            $this->dialog()->error(
+
+                $title = 'Ada Soal Belum Terjawab !!',
+
+                $description = 'Periksa Jawaban Anda, Ada Soal Belum terjawab dari 30 Soal'
+
+            );
+        } else {
+
+            auth()->user()->update([
+                'sudah_test'  => 1
+            ]);
+
+            $this->status = 'akhir';
+        }
     }
 
     private function getQuestion()

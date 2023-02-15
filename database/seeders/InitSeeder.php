@@ -25,11 +25,15 @@ class InitSeeder extends Seeder
                 'name' => $role
             ]);
         }
-        $taqi = User::create([
-            'name' => 'Taqius Shofi Albastomi,S.Kom',
-            'username' => 'taqi',
-            'password' => bcrypt('asdfasdf'),
+
+        $ppl = User::create([
+            'name' => 'Panitia CCI',
+            'username' => 'ppl',
+            'password' => bcrypt('smpalfappl'),
         ]);
-        $taqi->assignRole('Admin');
+
+        $ppl->assignRole('Admin');
+
+        
     }
 }
