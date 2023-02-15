@@ -17,16 +17,7 @@ class InitSeeder extends Seeder
     {
         $roles = [
             'Admin',
-            'Kepala Sekolah',
-            'Pendaftaran',
-            'Agama',
-            'Akademik',
-            'Wawancara',
-            'Kesehatan',
-            'Minat Bakat',
-            'Ukur Seragam',
-            'Pengumuman',
-            'Calon Siswa',
+            'Siswa'
         ];
 
         foreach ($roles as $role) {
@@ -40,7 +31,5 @@ class InitSeeder extends Seeder
             'password' => bcrypt('asdfasdf'),
         ]);
         $taqi->assignRole('Admin');
-
-
     }
 }

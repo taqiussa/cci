@@ -2,9 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Gaya;
 use App\Models\Question;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class QuestionSeeder extends Seeder
@@ -20,157 +18,235 @@ class QuestionSeeder extends Seeder
             [
                 [
                     'priority' => 1,
-                    'body' => '	Hasil dari 20×(40:8)-(16+9) = …',
-                    'answers' => json_encode([60, 75, 100, 125]),
+                    'body' => 'Langit dan bumi diciptakan pada 6 masa (periode). Enam masa penciptaan keduanya meliputi penciptaan langit dan bumi setelah langit terbentuk. Hal ini sesuai dengan ….',
+                    'answers' => json_encode([
+                        "Q.S. al-A'raf/7: 44",
+                        "Q.S. al-A'raf/7: 54",
+                        "Q.S. al-Anbiya;'/21: 30",
+                        "Q.S. al-Anbiya'/21: 40"
+                    ]),
                     'correct' => 1,
                     'foto' => '',
                 ],
                 [
                     'priority' => 2,
-                    'body' => '	Ari mempunyai 2 lembar uang seribuan dan 6 koin seratusan dan Santi mempunyai 3 lembar uang seribuan dan 7 koin seratusan. Jumlah uang Ari dan Santi adalah...',
-                    'answers' => json_encode(['Rp. 6.300', 'Rp. 7.300', 'Rp. 7.700', 'Rp. 8.300']),
-                    'foto' => '',
+                    'body' => '...',
+                    'answers' => json_encode(['Suatu yang padu', 'Sebagai suatu kesatuan', 'Sesuatu yang melengkapi', 'Suatu yang tidak dapat dipisahkan']),
+                    'foto' => 'no2.png',
                     'correct' => 0
                 ],
                 [
                     'priority' => 3,
-                    'body' => '	Ahmad memiliki kelereng yang disimpan di 4 toples miliknya, setiap toples berisi 75 kelereng. Ahmad mengambil 15 kelereng dari masing-masing toples untuk diberikan kepada teman-temannya. Sisa kelereng yang dimiliki Ahmad adalah ….',
-                    'answers' => json_encode([60, 240, 285, 300]),
+                    'body' => "Makna Q.S. al-A'raf/7: 54 menjelaskan penciptaan langit dan bumi terjadi pada….",
+                    'answers' => json_encode(['3 masa', '6 masa', '9 masa', '11 masa']),
                     'foto' => '',
                     'correct' => 1
                 ],
                 [
                     'priority' => 4,
-                    'body' => '	Data pengunjung perpustakaan sekolah pada bulan November 2022 disajikan dalam diagram batang di atas, berdasarkan diagram batang di atas, selisih pengunjung pada minggu kedua dan minggu kelima adalah …. Orang',
-                    'answers' => json_encode([20, 30, 40, 50]),
-                    'correct' => 0,
-                    'foto' => '4.png'
+                    'body' => '...',
+                    'answers' => json_encode([1, 2, 3, 4]),
+                    'correct' => 1,
+                    'foto' => 'no4.png'
                 ],
                 [
                     'priority' => 5,
-                    'body' => '	Keliling dari bangun datar di atas adalah... . cm',
-                    'answers' => json_encode([40, 80, 192, 384]),
-                    'correct' => 1,
-                    'foto' => '5.png'
+                    'body' => '	Islam merupakan agama yang sangat menghargai ilmu pengetahuan dan memerintahkan penganutnya untuk memiliki ilmu pengetahuan. Hal ini dibuktikan…',
+                    'answers' => json_encode([
+                        'Perintah menuntut ilmu bagi setiap muslim',
+                        'Wahyu yang pertama kali turun berisi perintah untuk belajar',
+                        'Pentingnya ilmu pengetahuan dalam upaya mengarungi kehidupan dunia',
+                        'Adanya ayat yang menjelaskan tentang ilmu pengetahuan dan alam semesta'
+                    ]),
+                    'correct' => 0,
+                    'foto' => ''
                 ],
                 [
                     'priority' => 6,
-                    'body' => '	Kalimat yang tepat untuk melengkapi percakapan rumpang tersebut adalah ….',
+                    'body' => '	Alam beserta seluruh isinya merupakan bukti kekuasaan Allah Swt. Salah satu syarat penting bagi seseorang untuk memahami hal ini, yaitu….',
                     'answers' => json_encode([
-                        'Kapan kak Rio bisa bermain bola professional?',
-                        'Berapa umur kak Rio sekarang?',
-                        'Kalau boleh saya tahu, sejak kapan kak Rio mulai berlatih bermain bola?',
-                        'Oh ya, kapan ulang tahun kak Rio ya?'
+                        'Memiliki guru yang tepat untuk memberikan pelajaran',
+                        'Memiliki kapasitas keilmuan yang cukup',
+                        'Dapat mengakses fasilitas ilmu',
+                        'Beriman kepada Allah Swt.'
                     ]),
-                    'correct' => 2,
-                    'foto' => '6.png'
+                    'correct' => 3,
+                    'foto' => ''
                 ],
                 [
                     'priority' => 7,
-                    'body' => '	Kalimat yang tepat untuk melengkapi isi pantun di atas adalah ….',
-                    'answers' => json_encode(['Jika kita naik kelas satu,
-                Akan dipuji orang tuanya
-                ', 'Setiap hari membuat jamu,
-                Diminum hilang rasa sakitnya
-                ', 'Rajin-rajinlah menuntut ilmu,
-                Untuk bekal di hari tua
-                ', 'Orang baik adalah aku,
-                Berkata baik dan wajah ceria
-                ']),
-                    'correct' => 2,
-                    'foto' => '7.png'
+                    'body' => '	Alam semesta yang dipelajari oleh manusia memiliki tujuan utama yaitu untuk memperbaiki kualitas hidupnya sebagai khalifah di bumi dan….',
+                    'answers' => json_encode([
+                        'Mendorong kesadaran untuk beriman dan semakin dekat kepada Allah Swt.',
+                        'Menyediakan jalan menuju pencapaian manusia sempurna sebagai khalifah Allah',
+                        'Menyediakan informasi untuk memanfaatkan kepercayaan Allah Swt.',
+                        'Menjadi tanda bahwa manusia adalah makhluk yang berakal'
+                    ]),
+                    'correct' => 0,
+                    'foto' => ''
                 ],
                 [
                     'priority' => 8,
-                    'body' => '	Isi cuplikan laporan di atas adalah ….',
-                    'answers' => json_encode(['Gangguan jalan akibat hujan dan angin kencang', 'Perjalanan warga ke kota lebih jauh', 'Keterlambatan orang-orang sampai ke temat tujuan', 'Gangguan jalan akibat pohon yang tumbang']),
-                    'correct' => 3,
-                    'foto' => '8.png'
+                    'body' => '	Beriman kepada malaikat dapat mendatangkan hikmah, diantaranta mendorong untuk…',
+                    'answers' => json_encode(['Senang membantu', 'Rajin belajar', 'Beribadah terus menerus', 'Bekerja siang dan malam']),
+                    'correct' => 2,
+                    'foto' => ''
                 ],
                 [
                     'priority' => 9,
-                    'body' => '	Sejak kelas I sampai kelas VI SD, Anisa selalu menjadi … . Dia tak pernah absen untuk menerima hadiah prestasi yang diberikan kepala sekolah. Ungkapan yang tepat untuk melengkapi kalimat tersebut adalah… ',
-                    'answers' => json_encode(['Buah bibir', 'Besar kepala', 'Bintang kelas', 'Kabar burung']),
+                    'body' => '	Ciri - ciri yang benar tentang malaikat adalah...',
+                    'answers' => json_encode(['Memiliki sifat-sifat tuhan', 'diciptakan dari cahaya', 'Memiliki sifat pemberontak', 'Dapat berkembang biak']),
                     'foto' => '',
-                    'correct' => 2
+                    'correct' => 1
                 ],
                 [
                     'priority' => 10,
-                    'body' => 'Pertandingan sepakbola antara PSS dan Persebaya berakhir dengan kemenangan oleh Persebaya. Suasana permainan sangat hidup. Para pendukung telah membanjiri Stadion Maguwoharjo sebelum pertandingan dimulai. Mereka saling menjaga satu sama lain, sehingga tidak ada banyak keributan sampai pertandingan selesai. Arti kata pendukung dalam paragraf adalah… .',
-                    'answers' => json_encode(['Reporter', 'Proyektor', 'Provokator', 'Supporter']),
+                    'body' => 'Berikut yang bukan merupakan sifat malaikat adalah…',
+                    'answers' => json_encode(['Melaksanakan perintah Allah Swt.', 'Tidak mempunyai nafsu', 'Senantiasa bertasbih kepada Allah Swt.', 'Senantiasa Takabur']),
                     'foto' => '', 'correct' => 3
 
                 ],
                 [
                     'priority' => 11,
-                    'body' => '	One, Two, ... , Four, Five.',
-                    'answers' => json_encode(['Try', 'Tree', 'Three', 'There']),
-                    'foto' => '',
-                    'correct' => 2
-                ],
-                [
-                    'priority' => 12,
-                    'body' => '	',
-                    'answers' => json_encode(['Good bye', 'Good night', 'Good morning', "I'm fine thank you"]),
-                    'correct' => 3,
-                    'foto' => '12.png'
-                ],
-                [
-                    'priority' => 13,
-                    'body' => '“Good morning” in Indonesia means... .',
-                    'answers' => json_encode(['Selamat pagi', 'Selamat sore', 'Selamat malam', 'Selamat jumpa']),
-                    'foto' => '',
-                    'correct' => 0
-                ],
-                [
-                    'priority' => 14,
-                    'body' => '	It is ...',
-                    'answers' => json_encode(['Five past eight', 'One past eight', 'Five to eight', 'One to eight']),
-                    'correct' => 0,
-                    'foto' => '14.png'
-                ],
-                [
-                    'priority' => 15,
-                    'body' => '	The colour of apple is...',
-                    'answers' => json_encode(['Yellow', 'Green', 'Red', 'Orange']),
-                    'correct' => 2,
-                    'foto' => '15.jpg'
-                ],
-                [
-                    'priority' => 16,
-                    'body' => '	Simbiosis mutualisme ditunjukkan oleh… ',
-                    'answers' => json_encode(['Tali putri dengan teh-tehan', 'Gulma dengan tanaman padi', 'Anggrek dengan pohon besar', 'Kerbau dengan burung jalak']),
+                    'body' => '	Salah satu tanda beriman kepada malaikat Allah Swt. adalah…',
+                    'answers' => json_encode(['Memohon perlindungan kepada malaikat karena kesuciannya', 'Malaikat akan menolong manusia yang taat beribadah', 'Karena malaikat makhluk gaib bisa menyerupai apa saja', 'Membiasakan perilaku terpuji karena seluruh amal dicatat oleh malaikat']),
                     'foto' => '',
                     'correct' => 3
                 ],
                 [
+                    'priority' => 12,
+                    'body' => '	Malaikat yang bertugas menurunkan air hujan adalah…',
+                    'answers' => json_encode(['Malaikat Jibril', 'Malaikat Mikail', 'Malaikat Israfil','Malaikat Izrail']),
+                    'correct' => 1,
+                    'foto' => ''
+                ],
+                [
+                    'priority' => 13,
+                    'body' => 'Percaya kepada malaikat termasuk rukun...',
+                    'answers' => json_encode(['Islam', 'Iman', 'Shalat', 'Haji']),
+                    'foto' => '',
+                    'correct' => 1
+                ],
+                [
+                    'priority' => 14,
+                    'body' => '	Percaya kepada malaikat termasuk rukun iman yang ke..',
+                    'answers' => json_encode([1,2,3,4]),
+                    'correct' => 1,
+                    'foto' => ''
+                ],
+                [
+                    'priority' => 15,
+                    'body' => '	Dalam surah Fatir ayat 1, Allah swt. Menjelaskan salah satu bentuk malaikat, yaitu…',
+                    'answers' => json_encode(['Memiliki taring', 'Memiliki sayap', 'Memiliki lingkaran putih diatas kepala' ,'Jumlahnya sangat banyak']),
+                    'correct' => 1,
+                    'foto' => ''
+                ],
+                [
+                    'priority' => 16,
+                    'body' => '	Orang yang menerima wahyu dari Allah untuk dirinya sendiri dan orang lain dinamakan ....',
+                    'answers' => json_encode(['Nabi', 'Rosul', 'Malaikat', 'Kyai']),
+                    'foto' => '',
+                    'correct' => 1
+                ],
+                [
                     'priority' => 17,
-                    'body' => '	Doni menaruh kapur barus di dalam lemari untuk mengusir kecoa, setelah beberapa hari kapur barus hilang. Hal ini dikarenakan kapur barus... .',
-                    'answers' => json_encode(['Mencair', 'Menguap', 'Menyublim', 'Dimakan kecoa']),
+                    'body' => '	Jumlah nabi yang wajib diimani umat islam ada ....',
+                    'answers' => json_encode([10, 5, 25, 114]),
                     'foto' => '',
                     'correct' => 2
                 ],
                 [
                     'priority' => 18,
-                    'body' => '	Urutan tahap perkembangan hewan di atas dalam daur hidupnya adalah...',
-                    'answers' => json_encode(['A-B-C-D', 'C-D-B-A', 'B-D-A-B', 'D-B-C-A']),
-                    'correct' => 1,
-                    'foto' => '18.png'
+                    'body' => '	Sifat fatonah yang dimiliki seorang rosul berarti ....',
+                    'answers' => json_encode(['Jujur', 'Menyampaikan', 'Pintar', 'Dapat dipercaya']),
+                    'correct' => 2,
+                    'foto' => ''
                 ],
                 [
                     'priority' => 19,
-                    'body' => '	Alat yang mempunyai bentuk perubahan energi yang sama pada gambar tersebut ditunjukkan oleh nomor... ',
-                    'answers' => json_encode(['I dan II', 'I dan IV', 'II dan III', 'II dan IV']),
-                    'correct' => 0,
-                    'foto' => '19.png'
+                    'body' => "Nabi yang mempunyai mu'jizat bisa berbahasa binatang adalah nabi ....",
+                    'answers' => json_encode(['Muhammad', 'Isa', 'Sulaiman', 'Musa']),
+                    'correct' => 2,
+                    'foto' => ''
                 ],
                 [
                     'priority' => 20,
-                    'body' => 'Curah hujan yang tinggi di wilayah perbukitan membuat lahan pertanian berkurang kesuburannya karena erosi. Cara yang dapat kita lakukan untuk mengatasi hal tersebut adalah… .',
-                    'answers' => json_encode(['Melakukan rotasi tanaman', 'Membuat teras bertingkat', 'Mengganti jenis tanaman palawija', 'Melakukan sistem tumpang sari']),
+                    'body' => "Kegunaan mu'jizat yang dimiliki seorang nabi adalah sebagai berikut ....",
+                    'answers' => json_encode(['Menyiksa kamu kafir', 'Berlaku sombong kepada musuh Allah', 'Mengalahkan musuh-musuh Allah', 'Menjadikan nabi bisa semena-mena karena kuat']),
+                    'foto' => '',
+                    'correct' => 2
+                ],
+                [
+                    'priority' => 21,
+                    'body' => "Nabi yang tidak mempan terbakar oleh api adalah ....",
+                    'answers' => json_encode(['Nabi Muhammad', 'Nabi Isa', 'Nabi Luth', 'Nabi Ibrahim']),
+                    'foto' => '',
+                    'correct' => 3
+                ],
+                [
+                    'priority' => 22,
+                    'body' => "Nabi Nuh diperintahkan oleh Allah untuk membuat ....",
+                    'answers' => json_encode(['Kapal', 'Tongkat', 'Gedung', 'Pedang']),
+                    'foto' => '',
+                    'correct' => 0
+                ],
+                [
+                    'priority' => 23,
+                    'body' => "Semua nabi menyebarkan ajaran yang sama yaitu berupa ajaran ....",
+                    'answers' => json_encode(["Sufi", "Mu'jizat", "Takbir", "Tauhid"]),
+                    'foto' => '',
+                    'correct' => 3
+                ],
+                [
+                    'priority' => 24,
+                    'body' => "Orang tua yang harus dihormati terlebih dahulu adalah..",
+                    'answers' => json_encode(['Paman', 'Nenek', 'Ibu', 'Bapak']),
+                    'foto' => '',
+                    'correct' => 2
+                ],
+                [
+                    'priority' => 25,
+                    'body' => "Ridha Allah SWT ada pada Ridha orang tua, dan murkanya Allah SWT ada pada murka orang tua, maksud hadits tersebut.. ",
+                    'answers' => json_encode(['Kalau ingin masuk surga, cium kaki ibu', 'Kalau ingin dicintai Allah SWT, jauhilah orang tua', 'Kalau ingin mendapat ridha Allah, hormati orang tua ', 'Kalau ingin mendapat murka Allah SWT, sayangi orang tua']),
+                    'foto' => '',
+                    'correct' => 2
+                ],
+                [
+                    'priority' => 26,
+                    'body' => "Sering seorang siswa membeda-bedakan fungsi antara orang tua dan guru, padahal fungsi keduanya hampir sama. Di bawah ini adalah fungsi orang tua dan guru yang sama, kecuali..",
+                    'answers' => json_encode(['Menjadi tempat mengadu', 'Merawat sehingga ia mandiri', 'Membina dan merawat', 'Memberi makan untuk pertumbuhan ']),
+                    'foto' => '',
+                    'correct' => 3
+                ],
+                [
+                    'priority' => 27,
+                    'body' => "Yang termasuk cara berbakti kepada orang tua dan guru adalah..",
+                    'answers' => json_encode(['Meminta agar keduanya memberi hadiah', 'Meminta agar keduanya selalu membimbingnya ', 'Mendengarkan nasihatnya', 'Menceritakan keburukannya ']),
                     'foto' => '',
                     'correct' => 1
                 ],
+                [
+                    'priority' => 28,
+                    'body' => "Berikut ini hikmah yang bisa diambil dari berbakti kepada kedua orang tua adalah..",
+                    'answers' => json_encode(['Hidup terasa sulit dan rumit', 'Diluaskan rezeki dan dipanjangkan umur', 'Allah akan murka terhadap kita', 'Menjadikan kita masuk neraka']),
+                    'foto' => '',
+                    'correct' => 1
+                ],
+                [
+                    'priority' => 29,
+                    'body' => "Guru adalah..",
+                    'answers' => json_encode(['Orang yang mengajarkan kita melalaikan perintah Allah dan mendidik kita untuk mendurhakai orang tua', 'Orang yang mengajarkan kita dalam keburukan dan mendidik kita sehingga menjadi orang yang mengerti dan dewasa', 'Orang yang mengajarkan kita dengan berbagai ilmu pengetahuan dan mendidik kita sehingga menjadi orang yang mengerti dan dewasa ', 'Orang yang mencari uang untuk kebutuhan kita sehari hari ']),
+                    'foto' => '',
+                    'correct' => 2
+                ],
+                [
+                    'priority' => 30,
+                    'body' => "Dalam kajian akhlak Islam berbakti kepada orang tua dikenal dengan istilah...",
+                    'answers' => json_encode(['Ihsanul-walidain', 'Uququl-walidain', 'Hurmatul-walidain', 'Birrul-walidain']),
+                    'foto' => '',
+                    'correct' => 3
+                ],
+                
             ];
         foreach ($questions as $item) {
             Question::create([
