@@ -34,6 +34,101 @@ class InitSeeder extends Seeder
 
         $ppl->assignRole('Admin');
 
-        
+        $kelompok1 = User::create([
+            'name' => 'Kelompok 1',
+            'username' => 'kelompok1',
+            'password' => bcrypt('kelompok1')
+        ]);
+        $kelompok1->assignRole('Siswa');
+        $kelompok2 = User::create([
+            'name' => 'Kelompok 2',
+            'username' => 'kelompok2',
+            'password' => bcrypt('kelompok2')
+        ]);
+        $kelompok2->assignRole('Siswa');
+        $kelompok3 = User::create([
+            'name' => 'Kelompok 3',
+            'username' => 'kelompok3',
+            'password' => bcrypt('kelompok3')
+        ]);
+        $kelompok3->assignRole('Siswa');
+        $kelompok4 = User::create([
+            'name' => 'Kelompok 4',
+            'username' => 'kelompok4',
+            'password' => bcrypt('kelompok4')
+        ]);
+        $kelompok4->assignRole('Siswa');
+        $kelompok5 = User::create([
+            'name' => 'Kelompok 5',
+            'username' => 'kelompok5',
+            'password' => bcrypt('kelompok5')
+        ]);
+        $kelompok5->assignRole('Siswa');
+        $kelompok6 = User::create([
+            'name' => 'Kelompok 6',
+            'username' => 'kelompok6',
+            'password' => bcrypt('kelompok6')
+        ]);
+        $kelompok6->assignRole('Siswa');
+        $kelompok7 = User::create([
+            'name' => 'Kelompok 7',
+            'username' => 'kelompok7',
+            'password' => bcrypt('kelompok7')
+        ]);
+        $kelompok7->assignRole('Siswa');
+        $kelompok8 = User::create([
+            'name' => 'Kelompok 8',
+            'username' => 'kelompok8',
+            'password' => bcrypt('kelompok8')
+        ]);
+        $kelompok8->assignRole('Siswa');
+        $kelompok9 = User::create([
+            'name' => 'Kelompok 9',
+            'username' => 'kelompok9',
+            'password' => bcrypt('kelompok9')
+        ]);
+        $kelompok9->assignRole('Siswa');
+        $kelompok10 = User::create([
+            'name' => 'Kelompok 10',
+            'username' => 'kelompok10',
+            'password' => bcrypt('kelompok10')
+        ]);
+        $kelompok10->assignRole('Siswa');
+        $kelompok11 = User::create([
+            'name' => 'Kelompok 11',
+            'username' => 'kelompok11',
+            'password' => bcrypt('kelompok11')
+        ]);
+        $kelompok11->assignRole('Siswa');
+        $kelompok12 = User::create([
+            'name' => 'Kelompok 12',
+            'username' => 'kelompok12',
+            'password' => bcrypt('kelompok12')
+        ]);
+        $kelompok12->assignRole('Siswa');
+        $kelompok13 = User::create([
+            'name' => 'Kelompok 13',
+            'username' => 'kelompok13',
+            'password' => bcrypt('kelompok13')
+        ]);
+        $kelompok13->assignRole('Siswa');
+        $kelompok14 = User::create([
+            'name' => 'Kelompok 14',
+            'username' => 'kelompok14',
+            'password' => bcrypt('kelompok14')
+        ]);
+        $kelompok14->assignRole('Siswa');
+        $kelompok15 = User::create([
+            'name' => 'Kelompok 15',
+            'username' => 'kelompok15',
+            'password' => bcrypt('kelompok15')
+        ]);
+        $kelompok15->assignRole('Siswa');
+        $kelompok16 = User::create([
+            'name' => 'Kelompok 16',
+            'username' => 'kelompok16',
+            'password' => bcrypt('kelompok16')
+        ]);
+        $kelompok16->assignRole('Siswa');
     }
 }

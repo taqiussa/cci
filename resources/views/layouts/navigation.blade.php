@@ -6,7 +6,8 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+                        <img src="{{ asset('images/logoalfa2.png') }}" class=" h-9 w-auto" />
+                        {{-- <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" /> --}}
                     </a>
                 </div>
 
@@ -23,6 +24,16 @@
                             {{ __('Hasil') }}
                         </x-nav-link>
                     @endrole
+                    <!-- Authentication -->
+                    <form method="POST" action="{{ route('logout') }}" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-700 focus:outline-none focus:text-gray-700 dark:focus:text-gray-300 focus:border-gray-300 dark:focus:border-gray-700 transition duration-150 ease-in-out cursor-pointer">
+                        @csrf
+
+                        <a :href="route('logout')"
+                            onclick="event.preventDefault();
+                                            this.closest('form').submit();">
+                            {{ __('Log Out') }}
+                        </a>
+                    </form>
                 </div>
             </div>
 
