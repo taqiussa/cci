@@ -130,5 +130,41 @@ class InitSeeder extends Seeder
             'password' => bcrypt('kelompok16')
         ]);
         $kelompok16->assignRole('Siswa');
+        $kelompok17 = User::create([
+            'name' => 'Kelompok 17',
+            'username' => 'kelompok17',
+            'password' => bcrypt('kelompok17')
+        ]);
+        $kelompok17->assignRole('Siswa');
+        $kelompok18 = User::create([
+            'name' => 'Kelompok 18',
+            'username' => 'kelompok18',
+            'password' => bcrypt('kelompok18')
+        ]);
+        $kelompok18->assignRole('Siswa');
+        $kelompok19 = User::create([
+            'name' => 'Kelompok 19',
+            'username' => 'kelompok19',
+            'password' => bcrypt('kelompok19')
+        ]);
+        $kelompok19->assignRole('Siswa');
+        $kelompok20 = User::create([
+            'name' => 'Kelompok 20',
+            'username' => 'kelompok20',
+            'password' => bcrypt('kelompok20')
+        ]);
+        $kelompok20->assignRole('Siswa');
+        $kelompok21 = User::create([
+            'name' => 'Kelompok 21',
+            'username' => 'kelompok21',
+            'password' => bcrypt('kelompok21')
+        ]);
+        $kelompok21->assignRole('Siswa');
+        $kelompok22 = User::create([
+            'name' => 'Kelompok 22',
+            'username' => 'kelompok22',
+            'password' => bcrypt('kelompok22')
+        ]);
+        $kelompok22->assignRole('Siswa');
     }
 }
